@@ -1,4 +1,4 @@
-var io = require('socket.io')();
+const io = require('socket.io')();
  
  // Listen for new connections from clients (socket)
  io.on('connection', function (socket) {

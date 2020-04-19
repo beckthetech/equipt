@@ -11,7 +11,9 @@ import NavBar from '../../components/NavBar/NavBar';
 import ItemListPage from '../ItemListPage/ItemListPage';
 import AddItemPage from '../AddItemPage/AddItemPage';
 import ItemDetailPage from '../ItemDetailPage/ItemDetailPage';
-import EditItemPage from '../EditItemPage/EditItemPage'
+import EditItemPage from '../EditItemPage/EditItemPage';
+
+// import Chat from 'socket.io-client';
 
 class App extends Component {
   state = {
@@ -83,7 +85,7 @@ class App extends Component {
             />
           } />
           <Route exact path='/details' render={({ location }) =>
-            <ItemDetailPage location={location} handleDeleteItem={this.handleDeleteItem} user={this.state.user}/>
+            <ItemDetailPage location={location} handleDeleteItem={this.handleDeleteItem} user={this.state.user} />
           } />
           <Route exact path='/add' render={() =>
             userService.getUser() ?
@@ -111,6 +113,7 @@ class App extends Component {
             />
           } />
         </main>
+        {/* <Chat /> */}
       </div>
     )
   };
