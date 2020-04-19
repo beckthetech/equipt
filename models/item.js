@@ -8,6 +8,7 @@ const itemSchema = new Schema({
     name: String,
     description: String,
     price: String,
+    photo: String
 }, { timestamps: true });
 
 module.exports = mongoose.model('Item', itemSchema);

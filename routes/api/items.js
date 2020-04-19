@@ -10,6 +10,7 @@ router.get('/:id', itemsCtrl.show);
 router.use(require('../../config/auth'));
 // process token for routes below
 router.post('/', checkAuth, itemsCtrl.create);
+router.put('/:id/photo', checkAuth, itemsCtrl.addPhoto);
 router.put('/:id', checkAuth, itemsCtrl.update);
 router.delete('/:id', checkAuth, itemsCtrl.delete);
 
