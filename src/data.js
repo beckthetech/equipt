@@ -4,7 +4,7 @@ const itemCategories = [
     { value: 'film cameras', label: 'Film cameras' },
     { value: 'lenses', label: 'Lenses' },
     { value: 'audio cables', label: 'Audio cables' },
-    { value: 'video cables', label: 'Video cables' },
+    { value: 'video cables', labels: 'Video cables' },
     { value: 'power supply', label: 'Power supply' },
     { value: 'amplifiers', label: 'Amplifiers' },
     { value: 'subwoofers', label: 'Subwoofers' },
