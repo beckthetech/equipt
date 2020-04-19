@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const favicon = require('serve-favicon');
-const socket = require('socket.io');
+const io = require('./io');
 
 const app = express();
 
@@ -31,4 +31,4 @@ server = app.listen(port, function () {
     console.log(`Express app listening on port ${port}`);
 });
 
-io = socket(server);
+io.attach(server)

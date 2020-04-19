@@ -1,17 +1,9 @@
-const socket = io => {
-    io.on('connection', client => {
-        console.log('New Connection');
-
-        // socket event for client subscription
-        client.on('subscribeToDateEvent', interval => {
-            console.log('Client is subscribing with interval: ', interval);
-
-            // emit message to the client side
-            setInterval(() => {
-                client.emit('getDate', new Date().toUTCString());
-            }, interval);
-        });
-    });
-}
-
-module.exports = socket;
+var io = require('socket.io')();
+ 
+ // Listen for new connections from clients (socket)
+ io.on('connection', function (socket) {
+   console.log('Client connected to socket.io!');
+ });
+ 
+ // io represents socket.io on the server - let's export it
+ module.exports = io;
