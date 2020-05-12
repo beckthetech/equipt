@@ -22,17 +22,17 @@
 ![img5]
 
 ## Technologies Used
-MERN stack - JavaScipt, React, Node.js, Express.js, Mongoose/MongoDB - JSON, JWT, HTML, CSS, Bootstrap
+JavaScipt, React, Node.js, Express.js, Mongoose/MongoDB, JSON, JWT, HTML, XML, CSS, Bootstrap
 
 ## Getting Started
-[Click here to get EquipT]: https://equip-t.herokuapp.com/
-[Click here to get EquipT]
+[Click here to launch EquipT]: https://equip-t.herokuapp.com/
+[Click here to launch EquipT]
 
-[Click for Trello Board]: https://trello.com/b/FWdmXH4L
-[Click for Trello Board]
+[Click to view the Trello Board]: https://trello.com/b/FWdmXH4L
+[Click to view the Trello Board]
 
-[Click for GitHub repo]: https://github.com/chasmad/equipt
-[Click for GitHub repo]
+[Click for the GitHub repo]: https://github.com/chasmad/equipt
+[Click for the GitHub repo]
 
 ## Next Steps
 - Keyword search
