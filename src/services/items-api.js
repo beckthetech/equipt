@@ -1,6 +1,7 @@
 import tokenService from '../../src/utils/tokenService';
 
-const BASE_URL = '/api/items';
+// const BASE_URL = '/api/items';
+const BASE_URL = 'https://equip-t.herokuapp.com/api/items';
 
 export function getAll() {
     return fetch(BASE_URL)
